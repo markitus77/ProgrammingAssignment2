@@ -1,7 +1,11 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Programming Assignment number 2
 
-## Write a short comment describing this function
+## This function creates a special matrix with a list to
+## a set of functions which are : 
+## set the value of the matrix
+## get the value of the matrix
+## set the value of the inverse
+## get the value of the inverse
 
 makeCacheMatrix <- function(x = matrix()) {
 
@@ -14,12 +18,12 @@ makeCacheMatrix <- function(x = matrix()) {
         setInverse <- function(solve) m <<- solve
         getInverse <- function() m
         list(set = set, get = get,
-             setInverse = setInverse,
-             getInverse = getInverse)
+            setInverse = setInverse,
+            getInverse = getInverse)
 }
 
 
-## Write a short comment describing this function
+## This function calculates the inverse of a matrix created with the above function
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
